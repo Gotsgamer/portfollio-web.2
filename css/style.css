@@ -1,3 +1,7 @@
+body {
+  font-family: "Arial", sans-serif;
+}
+
 .Gradient {
   display: flex;
   flex-direction: column;
@@ -21,7 +25,6 @@
 .btn:hover {
   transform: translateY(-5px);
 }
-
 .animation-m {
   display: flex;
   justify-content: center;
@@ -31,18 +34,73 @@
 }
 .animation-m h1 {
   display: flex;
-  font-size: 50px;
+  font-size: 80px;
   letter-spacing: 5px;
 }
 .p {
-  background-color: #ededed;
+  border: dashed #aef8ae;
+  border-radius: 50px;
   width: 800px;
   height: auto;
-  border-radius: 15px;
-  border: none;
   font-size: 20px;
   padding: 25px;
 }
+
+
+#Projects {
+  padding: 3em 2em;
+  background-color: white;
+  font-family: sans-serif;
+  width: max(100em);
+  height: max(25em) ;
+}
+
+.carousel-title {
+  font-size: 2.8em;
+  margin-bottom: 1.5em;
+  text-align: center;
+  font-weight: bold;
+}
+
+.carousel {
+  display: flex;
+  gap: 1.5em;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 1em;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.P-card {
+  flex: 0 0 300px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 5em 7em 3em 7em;
+  font-size: larger;
+  text-decoration: none;
+  color: #000;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.P-card:hover {
+  transform: translateY(-5px);
+}
+
+.P-card h3 {
+  font-size: 1.2em;
+  margin-top: 1em;
+}
+
+.P-card p {
+  font-size: 0.95em;
+  margin-top: 0.5em;
+  color: #444;
+}
+
 
 
 /* this is a micro libary that manages the transition animations */
@@ -61,5 +119,5 @@
   transform: translateY(0);
   z-index: -1;
   position: relative;
-
 }
+
